@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "express": "^4.17.2",
+    "react-bootstrap": "^2.0.3"
+  },
+  "name": "quit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

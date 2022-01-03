@@ -1,0 +1,66 @@
+@import "./reset.scss";
+
+$메인칼라: #ff0000;
+
+.wow-enter {
+  // 애니메이션 시작할 때 적용할 CSS
+  opacity: 0;
+}
+
+.wow-enter-active {
+  // 애니메이션 동작할 때 적용할 CSS
+  opacity: 1;
+  transition: all 500ms;
+}
+
+.red {
+  color: $메인칼라;
+}
+
+@mixin 함수 {
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+.my-alert {
+  @include 함수();
+}
+
+.my-alert-yellow {
+  @extend .my-alert;
+  background-color: #ffe591;
+}
+
+.my-alert p {
+  margin-bottom: 0;
+}
+
+.lasted {
+  width: 300px;
+  height: auto;
+  background-color: rgb(235, 217, 199);
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.lasted h3 {
+  height: 70px;
+  line-height: 70px;
+  border-bottom: 1px solid #eee;
+}
+
+.lasted img {
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 10%;
+}
+
+.lasted h5 {
+  height: 40px;
+  line-height: 40px;
+}
